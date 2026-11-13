@@ -1,22 +1,14 @@
 {
   "name": "navigation",
   "version": "1.0.0",
-  "main": "index.ts",
-  "dependencies": {
-    "expo": "~58.0.23",
-    "expo-status-bar": "~58.0.4",
-    "react": "19.3.0",
-    "react-native": "0.88.1"
-  },
-  "devDependencies": {
-    "@types/react": "~19.3.0",
-    "typescript": "~6.0.3"
-  },
+  "private": true,
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "private": true
+    "dev": "pnpm --filter @navigation/desktop tauri dev",
+    "build": "pnpm --filter @navigation/desktop tauri build",
+    "web": "pnpm --filter @navigation/desktop dev",
+    "android": "pnpm --filter @navigation/desktop tauri android dev",
+    "android:build": "pnpm --filter @navigation/desktop tauri android build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  }
 }

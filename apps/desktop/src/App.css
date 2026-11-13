@@ -1,0 +1,156 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #071525;
+  color: #e7f1ff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #071525;
+}
+
+.tab,
+button {
+  border: 0;
+  border-radius: 10px;
+  background: #16324d;
+  color: #d5e4f2;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.tab.active,
+button.primary {
+  background: #145e56;
+  color: #f3fffd;
+}
+
+button.danger {
+  background: #3a1d24;
+  color: #ffb4b4;
+}
+
+.pane {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d2236;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.card.column,
+.column {
+  align-items: stretch;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.readout {
+  background: #0d2236;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.readout span {
+  display: block;
+  color: #9fb4c9;
+  font-size: 12px;
+}
+
+.readout strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.banner {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  background: #12324a;
+  border: 1px solid #3dd6c6;
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.toolbar {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.chip {
+  background: #0d2236;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+input {
+  background: #0d2236;
+  color: #e7f1ff;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+h2 {
+  color: #9fb4c9;
+  font-size: 13px;
+  font-weight: 500;
+}
