@@ -26,6 +26,7 @@ export { courseFromDegrees, headingFromDegrees, metersPerSecondToKnots } from '.
 export {
   ActiveLegStatus,
   ARRIVAL_RADIUS_NAUTICAL_MILES,
+  OFF_TRACK_NAUTICAL_MILES,
   ArrivalStatus,
   arrivalEstimate,
   crossTrackError,
@@ -50,5 +51,15 @@ export { en } from './i18n/en'
 export { zh } from './i18n/zh'
 export { NmeaKind, parseNmea } from './nmea/parse'
 export type { NmeaFix, NmeaHeading, NmeaIgnored, NmeaMotion, NmeaPosition, NmeaResult } from './nmea/parse'
-export { createNavigationStore, LocationPermissionStatus } from './store/createNavigationStore'
-export type { NavigationStorage } from './store/createNavigationStore'
+export { stepSimulation } from './navigation/simulation'
+export { buildOwnShipOverlay, type OwnShipOverlayOptions } from './geo/ownShipOverlay'
+export {
+  chartDisplayShip,
+  chartTestOwnShip,
+  chartToolSelected,
+  chartToolChrome,
+  chartTools,
+  chartUseTestShip,
+  chartView,
+} from './geo/chartView'
+export type { NavigationEvent, NavigationEventType, SimulationProgress, SimulationStepInput, SimulationStepResult } from './navigation/simulation'

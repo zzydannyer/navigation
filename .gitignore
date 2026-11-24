@@ -40,5 +40,11 @@ yarn-error.*
 /ios
 /android
 
+# build outputs
+*.apk
+*.idsig
+*.aab
+src-tauri/target/
+
 # conversation notes
 report/

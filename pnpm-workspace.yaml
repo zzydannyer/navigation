@@ -1,5 +1,7 @@
 packages:
   - "packages/*"
   - "apps/*"
+virtualStoreDirMaxLength: 40
 allowBuilds:
   esbuild: true
+  '@parcel/watcher': true

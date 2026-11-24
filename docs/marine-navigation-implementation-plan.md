@@ -2,6 +2,8 @@
 
 日期：2026-11-04（香港时间）
 
+> 2026-11-16 更新：后续架构以 `docs/dual-app-refactor-plan.md` 的双应用方案为准——先完成 Tauri React WebView 应用（`apps/tauri`），验收后再实施 React Native 原生应用（界面与海图均原生，不使用 WebView 承载海图）。本文件中海图格式（S-57/S-63/S-100、PMTiles）的验证记录与验收口径继续保留；旧的 Expo/RN 外壳描述已作废，目录与阶段划分以双应用方案文档为准。
+
 ## 1. 任务与原则
 
 在现有工程上建设 Android 平板 / iPad 优先的离线海事辅助导航应用，覆盖 S-57、S-63、明确产品版本的 S-100 数据，以及 PMTiles。桌面保留现有 Tauri 骨架，暂不迁移 Electron。

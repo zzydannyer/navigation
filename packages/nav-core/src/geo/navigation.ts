@@ -5,6 +5,7 @@ import { LegKind, Route } from '../domain/route'
 import { Waypoint } from '../domain/waypoint'
 
 export const ARRIVAL_RADIUS_NAUTICAL_MILES = 0.05
+export const OFF_TRACK_NAUTICAL_MILES = 0.1
 const ON_TRACK_NAUTICAL_MILES = 0.01
 const STOPPED_KNOTS = 0.1
 

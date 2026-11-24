@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "NavigationMobile",
+    "slug": "navigation-mobile",
+    "scheme": "navigation-mobile",
+    "version": "0.1.0",
+    "android": {
+      "package": "com.navigationmobile",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.navigationmobile",
+      "infoPlist": { "NSLocationWhenInUseUsageDescription": "用于显示当前位置和航海导航" }
+    },
+    "plugins": ["@maplibre/maplibre-react-native", "./plugins/withWindowsCmake"]
+  }
+}
